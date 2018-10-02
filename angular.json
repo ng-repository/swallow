@@ -57,6 +57,12 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.jaeho.ts"
                 }]
+            },
+            "unleashed": {
+              "fileReplacements": [{
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.unleashed.ts"
+                }]
             }
           }
         },
@@ -71,6 +77,9 @@
             },
             "jaeho": {
               "browserTarget": "swallow:build:jaeho"
+            },
+            "unleashed": {
+              "browserTarget": "swallow:build:unleashed"
             }
           }
         },
