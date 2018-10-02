@@ -13,7 +13,11 @@ export class SwallowService {
         public auth: AngularFireAuth,
         public db: AngularFirestore
     ) {
-        this.items = db.collection('items').valueChanges();
+        try {
+            this.items = db.collection('items').valueChanges();
+        } catch (e) {
+            console.log(e.message);
+        }
     }
 
 
